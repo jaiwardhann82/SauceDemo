@@ -105,7 +105,7 @@ namespace csharpMcp.Tests.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("tests/Features/SauceDemoOrder.feature.ndjson", 3);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("tests/Features/SauceDemoOrder.feature.ndjson", 4);
         }
         
         [global::NUnit.Framework.TestAttribute()]
@@ -204,6 +204,93 @@ namespace csharpMcp.Tests.Features
     await testRunner.AndAsync("I click on the back home button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 26
+    await testRunner.ThenAsync("I should be navigated back to the inventory home page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [global::NUnit.Framework.TestAttribute()]
+        [global::NUnit.Framework.DescriptionAttribute("Add 3 products to cart and complete checkout with verification")]
+        public async global::System.Threading.Tasks.Task Add3ProductsToCartAndCompleteCheckoutWithVerification()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
+            string pickleIndex = "1";
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Add 3 products to cart and complete checkout with verification", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            string[] tagsOfRule = ((string[])(null));
+            global::Reqnroll.RuleInfo ruleInfo = null;
+#line 28
+this.ScenarioInitialize(scenarioInfo, ruleInfo);
+#line hidden
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                await testRunner.SkipScenarioAsync();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 29
+    await testRunner.GivenAsync("I navigate to SauceDemo login page \"https://www.saucedemo.com/?utm_source=chatgpt" +
+                        ".com\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 30
+    await testRunner.WhenAsync("I log in with username \"standard_user\" and password \"secret_sauce\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+                global::Reqnroll.Table table3 = new global::Reqnroll.Table(new string[] {
+                            "ProductName"});
+                table3.AddRow(new string[] {
+                            "Sauce Labs Backpack"});
+                table3.AddRow(new string[] {
+                            "Sauce Labs Bike Light"});
+                table3.AddRow(new string[] {
+                            "Sauce Labs Bolt T-Shirt"});
+#line 31
+    await testRunner.AndAsync("I add the following 5 products to the cart and verify the button changes to \"Remo" +
+                        "ve\":", ((string)(null)), table3, "And ");
+#line hidden
+#line 37
+    await testRunner.AndAsync("I click on the shopping cart", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 38
+    await testRunner.AndAsync("I click on the checkout button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 39
+    await testRunner.AndAsync("I enter checkout information with first name \"John\", last name \"Doe\", and postal " +
+                        "code \"12345\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 40
+    await testRunner.AndAsync("I click continue to proceed to checkout overview", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+                global::Reqnroll.Table table4 = new global::Reqnroll.Table(new string[] {
+                            "ProductName",
+                            "Quantity",
+                            "Description"});
+                table4.AddRow(new string[] {
+                            "Sauce Labs Backpack",
+                            "1",
+                            "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromisi" +
+                                "ng style with unequaled laptop and tablet protection."});
+                table4.AddRow(new string[] {
+                            "Sauce Labs Bike Light",
+                            "1",
+                            "A red light isn\'t the desired state in testing but it sure helps when riding your" +
+                                " bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."});
+                table4.AddRow(new string[] {
+                            "Sauce Labs Bolt T-Shirt",
+                            "1",
+                            "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American App" +
+                                "arel, 100% ringspun combed cotton, heather gray with red bolt."});
+#line 41
+    await testRunner.ThenAsync("I verify the quantity and description for all added products:", ((string)(null)), table4, "Then ");
+#line hidden
+#line 47
+    await testRunner.WhenAsync("I click on the finish button", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 48
+    await testRunner.AndAsync("I click on the back home button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 49
     await testRunner.ThenAsync("I should be navigated back to the inventory home page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }

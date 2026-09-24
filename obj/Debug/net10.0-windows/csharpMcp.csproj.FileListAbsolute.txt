@@ -282,6 +282,7 @@ C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\c
 C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\csharpMcp.AssemblyInfo.cs
 C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\csharpMcp.csproj.CoreCompileInputs.cache
 C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\NUnit.AssemblyHooks.csharpMcp.cs
+C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\csharpMcp.sourcelink.json
 C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\csharpMcp.csproj.Up2Date
 C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\csharpMcp.dll
 C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\obj\Debug\net10.0-windows\refint\csharpMcp.dll
