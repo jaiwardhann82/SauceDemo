@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7978cd70-d5d8-4afd-8b01-f5e2163be910" name="WardhanJa@5CG451219F 2026-09-12 12:27:07" runUser="TPOWER\WardhanJa" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-12T12:27:07.0093499+12:00" queuing="2026-09-12T12:27:07.0093505+12:00" start="2026-09-12T12:27:00.3168648+12:00" finish="2026-09-12T12:27:09.4515297+12:00" />
+  <TestSettings name="default" id="e6952f15-5b16-49a5-87c1-41d044f8f545">
+    <Deployment runDeploymentRoot="WardhanJa_5CG451219F_2026-09-12_12_27_07" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="da89f7a4-63b0-4fec-8105-9f5e7ba83873" testId="eb2c9630-b0e8-d055-b315-49ff714cd9af" testName="AddFiveProductsToCartAndCompleteCheckoutWithVerification" computerName="5CG451219F" duration="00:00:03.2016000" startTime="2026-09-12T12:27:03.7678425+12:00" endTime="2026-09-12T12:27:06.9694118+12:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da89f7a4-63b0-4fec-8105-9f5e7ba83873">
+      <Output>
+        <StdOut>Given I navigate to SauceDemo login page "https://www.saucedemo.com/?utm_source=chatgpt.com"&#xD;
+-&gt; done: SauceDemoSteps.GivenINavigateToSauceDemoLoginPage("https://www.sauce...") (1.2s)&#xD;
+When I log in with username "standard_user" and password "secret_sauce"&#xD;
+-&gt; done: SauceDemoSteps.WhenILogInWithUsernameAndPassword("standard_user", "secret_sauce") (0.1s)&#xD;
+And I add the following 5 products to the cart and verify the button changes to "Remove":&#xD;
+  --- table step argument ---&#xD;
+  | ProductName              |&#xD;
+  | Sauce Labs Backpack      |&#xD;
+  | Sauce Labs Bike Light    |&#xD;
+  | Sauce Labs Bolt T-Shirt  |&#xD;
+  | Sauce Labs Fleece Jacket |&#xD;
+  | Sauce Labs Onesie        |&#xD;
+-&gt; done: SauceDemoSteps.WhenIAddTheFollowingProductsToTheCartAndVerifyTheButtonChangesTo("Remove", &lt;table&gt;) (0.2s)&#xD;
+And I click on the shopping cart&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheShoppingCart() (0.0s)&#xD;
+And I click on the checkout button&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheCheckoutButton() (0.1s)&#xD;
+And I enter checkout information with first name "John", last name "Doe", and postal code "12345"&#xD;
+-&gt; done: SauceDemoSteps.WhenIEnterCheckoutInformationWithFirstNameLastNameAndPostalCode("John", "Doe", "12345") (0.0s)&#xD;
+And I click continue to proceed to checkout overview&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickContinueToProceedToCheckoutOverview() (0.0s)&#xD;
+Then I verify the quantity and description for all added products:&#xD;
+  --- table step argument ---&#xD;
+  | ProductName              | Quantity | Description                                                                                                                                                            |&#xD;
+  | Sauce Labs Backpack      | 1        | carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.                                 |&#xD;
+  | Sauce Labs Bike Light    | 1        | A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.        |&#xD;
+  | Sauce Labs Bolt T-Shirt  | 1        | Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.                        |&#xD;
+  | Sauce Labs Fleece Jacket | 1        | It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office. |&#xD;
+  | Sauce Labs Onesie        | 1        | Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.        |&#xD;
+-&gt; done: SauceDemoSteps.ThenIVerifyTheQuantityAndDescriptionForAllAddedProducts(&lt;table&gt;) (0.1s)&#xD;
+When I click on the finish button&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheFinishButton() (0.1s)&#xD;
+And I click on the back home button&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheBackHomeButton() (0.1s)&#xD;
+Then I should be navigated back to the inventory home page&#xD;
+-&gt; done: SauceDemoSteps.ThenIShouldBeNavigatedBackToTheInventoryHomePage() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3902da9d-3d16-44e1-ac41-49f0f5f11012" testId="5056942f-787b-0ab1-21f3-1331491da316" testName="AddFiveProductsAndCheckoutSuccessfully" computerName="5CG451219F" duration="00:00:02.3727630" startTime="2026-09-12T12:27:06.9772231+12:00" endTime="2026-09-12T12:27:09.3500075+12:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3902da9d-3d16-44e1-ac41-49f0f5f11012" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AddFiveProductsToCartAndCompleteCheckoutWithVerification" storage="c:\playwright resume 2026 source\dotnetmcp\csharpmcp\bin\debug\net10.0\csharpmcp.dll" id="eb2c9630-b0e8-d055-b315-49ff714cd9af">
+      <Execution id="da89f7a4-63b0-4fec-8105-9f5e7ba83873" />
+      <TestMethod codeBase="c:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0\csharpMcp.dll" adapterTypeName="executor://nunit3testexecutor/" className="csharpMcp.Tests.Features.SauceDemoOrderFlowFeature" name="AddFiveProductsToCartAndCompleteCheckoutWithVerification" />
+    </UnitTest>
+    <UnitTest name="AddFiveProductsAndCheckoutSuccessfully" storage="c:\playwright resume 2026 source\dotnetmcp\csharpmcp\bin\debug\net10.0\csharpmcp.dll" id="5056942f-787b-0ab1-21f3-1331491da316">
+      <Execution id="3902da9d-3d16-44e1-ac41-49f0f5f11012" />
+      <TestMethod codeBase="c:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0\csharpMcp.dll" adapterTypeName="executor://nunit3testexecutor/" className="csharpMcp.Tests.SauceDemoPageTest" name="AddFiveProductsAndCheckoutSuccessfully" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="eb2c9630-b0e8-d055-b315-49ff714cd9af" executionId="da89f7a4-63b0-4fec-8105-9f5e7ba83873" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5056942f-787b-0ab1-21f3-1331491da316" executionId="3902da9d-3d16-44e1-ac41-49f0f5f11012" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started&#xD;
+Running all tests in c:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0\csharpMcp.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Given I navigate to SauceDemo login page "https://www.saucedemo.com/?utm_source=chatgpt.com"&#xD;
+-&gt; done: SauceDemoSteps.GivenINavigateToSauceDemoLoginPage("https://www.sauce...") (1.2s)&#xD;
+When I log in with username "standard_user" and password "secret_sauce"&#xD;
+-&gt; done: SauceDemoSteps.WhenILogInWithUsernameAndPassword("standard_user", "secret_sauce") (0.1s)&#xD;
+And I add the following 5 products to the cart and verify the button changes to "Remove":&#xD;
+  --- table step argument ---&#xD;
+  | ProductName              |&#xD;
+  | Sauce Labs Backpack      |&#xD;
+  | Sauce Labs Bike Light    |&#xD;
+  | Sauce Labs Bolt T-Shirt  |&#xD;
+  | Sauce Labs Fleece Jacket |&#xD;
+  | Sauce Labs Onesie        |&#xD;
+-&gt; done: SauceDemoSteps.WhenIAddTheFollowingProductsToTheCartAndVerifyTheButtonChangesTo("Remove", &lt;table&gt;) (0.2s)&#xD;
+And I click on the shopping cart&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheShoppingCart() (0.0s)&#xD;
+And I click on the checkout button&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheCheckoutButton() (0.1s)&#xD;
+And I enter checkout information with first name "John", last name "Doe", and postal code "12345"&#xD;
+-&gt; done: SauceDemoSteps.WhenIEnterCheckoutInformationWithFirstNameLastNameAndPostalCode("John", "Doe", "12345") (0.0s)&#xD;
+And I click continue to proceed to checkout overview&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickContinueToProceedToCheckoutOverview() (0.0s)&#xD;
+Then I verify the quantity and description for all added products:&#xD;
+  --- table step argument ---&#xD;
+  | ProductName              | Quantity | Description                                                                                                                                                            |&#xD;
+  | Sauce Labs Backpack      | 1        | carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.                                 |&#xD;
+  | Sauce Labs Bike Light    | 1        | A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.        |&#xD;
+  | Sauce Labs Bolt T-Shirt  | 1        | Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.                        |&#xD;
+  | Sauce Labs Fleece Jacket | 1        | It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office. |&#xD;
+  | Sauce Labs Onesie        | 1        | Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.        |&#xD;
+-&gt; done: SauceDemoSteps.ThenIVerifyTheQuantityAndDescriptionForAllAddedProducts(&lt;table&gt;) (0.1s)&#xD;
+When I click on the finish button&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheFinishButton() (0.1s)&#xD;
+And I click on the back home button&#xD;
+-&gt; done: SauceDemoSteps.WhenIClickOnTheBackHomeButton() (0.1s)&#xD;
+Then I should be navigated back to the inventory home page&#xD;
+-&gt; done: SauceDemoSteps.ThenIShouldBeNavigatedBackToTheInventoryHomePage() (0.0s)&#xD;
+&#xD;
+NUnit Adapter 5.0.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

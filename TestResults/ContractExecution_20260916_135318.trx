@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1921dd49-4f7a-49cb-b379-9567bcd088c0" name="WardhanJa@5CG451219F 2026-09-16 13:53:42" runUser="TPOWER\WardhanJa" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-16T13:53:42.9049699+12:00" queuing="2026-09-16T13:53:42.9049706+12:00" start="2026-09-16T13:53:20.9314072+12:00" finish="2026-09-16T13:54:16.6616130+12:00" />
+  <TestSettings name="default" id="d053d37e-edad-492b-a574-7e7133b7cee8">
+    <Deployment runDeploymentRoot="WardhanJa_5CG451219F_2026-09-16_13_53_42" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="38644dfe-1028-4e4f-bd09-2a84720ad0a1" testId="30715e59-8fa9-d066-e589-877b5ee0ea48" testName="SignInToDealCaptureWithACognitoTestAccount(&quot;write&quot;,&quot;MRP\\autoDealCapW&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;1&quot;,null)" computerName="5CG451219F" duration="00:00:16.3531010" startTime="2026-09-16T13:53:42.8762503+12:00" endTime="2026-09-16T13:53:59.2293791+12:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38644dfe-1028-4e4f-bd09-2a84720ad0a1">
+      <Output>
+        <StdOut>==========================================&#xD;
+Starting Deal Capture test&#xD;
+==========================================&#xD;
+Starting Playwright...&#xD;
+Starting Google Chrome on CDP port 59622...&#xD;
+Launching Chrome in Incognito mode...&#xD;
+Chrome process started.&#xD;
+Waiting for Chrome remote debugging...&#xD;
+Connecting Playwright to Chrome...&#xD;
+Playwright connected to Chrome.&#xD;
+Playwright page connected.&#xD;
+Given I have Cognito credentials "MRP\autoDealCapW" and "aEm_M3kG_WjC-_"&#xD;
+Cognito user: MRP\autoDealCapW&#xD;
+Cognito password: ********&#xD;
+-&gt; done: DealCaptureCognitoSteps.GivenIHaveCognitoCredentials("MRP\autoDealCapW", "aEm_M3kG_WjC-_") (0.0s)&#xD;
+When I open the Deal Capture URL "https://dealcapture-test.mrp.net.nz/" in Cognito mode&#xD;
+Opening Deal Capture URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Waiting for Chrome Sign in dialog...&#xD;
+Waiting for Chrome authentication dialog...&#xD;
+Entering username: MRP\autoDealCapW&#xD;
+Entering password.&#xD;
+Submitted Chrome authentication dialog.&#xD;
+Navigation response: net::ERR_INVALID_AUTH_CREDENTIALS at https://dealcapture-test.mrp.net.nz/&#xD;
+Call log:&#xD;
+  - navigating to "https://dealcapture-test.mrp.net.nz/", waiting until "commit"&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+-&gt; done: DealCaptureCognitoSteps.WhenIOpenTheDealCaptureUrlInCognitoMode("https://dealcaptu...") (14.7s)&#xD;
+Then I should be signed in to Deal Capture as a "write" user&#xD;
+==========================================&#xD;
+Testing role: write&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Page title: Home Page&#xD;
+==========================================&#xD;
+-&gt; done: DealCaptureCognitoSteps.ThenIShouldBeSignedInToDealCaptureAsAUser("write") (0.1s)&#xD;
+Closing Playwright browser...&#xD;
+Playwright browser closed.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e01044d-c585-43e3-af07-913228667ff0" testId="534d4f1c-2c6f-5e77-2f64-c099214fd433" testName="SignInToDealCaptureWithACognitoTestAccount(&quot;read&quot;,&quot;MRP\\autoDealCapR&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;0&quot;,null)" computerName="5CG451219F" duration="00:00:18.2490770" startTime="2026-09-16T13:53:24.6260381+12:00" endTime="2026-09-16T13:53:42.8750879+12:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e01044d-c585-43e3-af07-913228667ff0">
+      <Output>
+        <StdOut>==========================================&#xD;
+Starting Deal Capture test&#xD;
+==========================================&#xD;
+Starting Playwright...&#xD;
+Starting Google Chrome on CDP port 54697...&#xD;
+Launching Chrome in Incognito mode...&#xD;
+Chrome process started.&#xD;
+Waiting for Chrome remote debugging...&#xD;
+Connecting Playwright to Chrome...&#xD;
+Playwright connected to Chrome.&#xD;
+Playwright page connected.&#xD;
+Given I have Cognito credentials "MRP\autoDealCapR" and "aEm_M3kG_WjC-_"&#xD;
+Cognito user: MRP\autoDealCapR&#xD;
+Cognito password: ********&#xD;
+-&gt; done: DealCaptureCognitoSteps.GivenIHaveCognitoCredentials("MRP\autoDealCapR", "aEm_M3kG_WjC-_") (0.0s)&#xD;
+When I open the Deal Capture URL "https://dealcapture-test.mrp.net.nz/" in Cognito mode&#xD;
+Opening Deal Capture URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Waiting for Chrome Sign in dialog...&#xD;
+Waiting for Chrome authentication dialog...&#xD;
+Entering username: MRP\autoDealCapR&#xD;
+Entering password.&#xD;
+Submitted Chrome authentication dialog.&#xD;
+Navigation response: net::ERR_INVALID_AUTH_CREDENTIALS at https://dealcapture-test.mrp.net.nz/&#xD;
+Call log:&#xD;
+  - navigating to "https://dealcapture-test.mrp.net.nz/", waiting until "commit"&#xD;
+Current URL: chrome-error://chromewebdata/&#xD;
+-&gt; done: DealCaptureCognitoSteps.WhenIOpenTheDealCaptureUrlInCognitoMode("https://dealcaptu...") (13.8s)&#xD;
+Then I should be signed in to Deal Capture as a "read" user&#xD;
+==========================================&#xD;
+Testing role: read&#xD;
+Current URL: chrome-error://chromewebdata/&#xD;
+Page title: Loading https://dealcapture-test.mrp.net.nz/&#xD;
+==========================================&#xD;
+-&gt; done: DealCaptureCognitoSteps.ThenIShouldBeSignedInToDealCaptureAsAUser("read") (0.5s)&#xD;
+Closing Playwright browser...&#xD;
+Playwright browser closed.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9eb071e2-db63-4026-bc0b-9d5423ece61c" testId="2914eb75-6f9f-7c4d-8b31-61d539073f58" testName="SignInToDealCaptureWithACognitoTestAccount(&quot;authorize&quot;,&quot;MRP\\autoDealCapA&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;2&quot;,null)" computerName="5CG451219F" duration="00:00:17.3511550" startTime="2026-09-16T13:53:59.2294353+12:00" endTime="2026-09-16T13:54:16.5806191+12:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9eb071e2-db63-4026-bc0b-9d5423ece61c">
+      <Output>
+        <StdOut>==========================================&#xD;
+Starting Deal Capture test&#xD;
+==========================================&#xD;
+Starting Playwright...&#xD;
+Starting Google Chrome on CDP port 64190...&#xD;
+Launching Chrome in Incognito mode...&#xD;
+Chrome process started.&#xD;
+Waiting for Chrome remote debugging...&#xD;
+Connecting Playwright to Chrome...&#xD;
+Playwright connected to Chrome.&#xD;
+Playwright page connected.&#xD;
+Given I have Cognito credentials "MRP\autoDealCapA" and "aEm_M3kG_WjC-_"&#xD;
+Cognito user: MRP\autoDealCapA&#xD;
+Cognito password: ********&#xD;
+-&gt; done: DealCaptureCognitoSteps.GivenIHaveCognitoCredentials("MRP\autoDealCapA", "aEm_M3kG_WjC-_") (0.0s)&#xD;
+When I open the Deal Capture URL "https://dealcapture-test.mrp.net.nz/" in Cognito mode&#xD;
+Opening Deal Capture URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Waiting for Chrome Sign in dialog...&#xD;
+Waiting for Chrome authentication dialog...&#xD;
+Entering username: MRP\autoDealCapA&#xD;
+Entering password.&#xD;
+Submitted Chrome authentication dialog.&#xD;
+Navigation response: net::ERR_INVALID_AUTH_CREDENTIALS at https://dealcapture-test.mrp.net.nz/&#xD;
+Call log:&#xD;
+  - navigating to "https://dealcapture-test.mrp.net.nz/", waiting until "commit"&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+-&gt; done: DealCaptureCognitoSteps.WhenIOpenTheDealCaptureUrlInCognitoMode("https://dealcaptu...") (15.8s)&#xD;
+Then I should be signed in to Deal Capture as a "authorize" user&#xD;
+==========================================&#xD;
+Testing role: authorize&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Page title: Home Page&#xD;
+==========================================&#xD;
+-&gt; done: DealCaptureCognitoSteps.ThenIShouldBeSignedInToDealCaptureAsAUser("authorize") (0.1s)&#xD;
+Closing Playwright browser...&#xD;
+Playwright browser closed.</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SignInToDealCaptureWithACognitoTestAccount(&quot;authorize&quot;,&quot;MRP\\autoDealCapA&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;2&quot;,null)" storage="c:\playwright resume 2026 source\dotnetmcp\csharpmcp\bin\debug\net10.0-windows\csharpmcp.dll" id="2914eb75-6f9f-7c4d-8b31-61d539073f58">
+      <Execution id="9eb071e2-db63-4026-bc0b-9d5423ece61c" />
+      <TestMethod codeBase="C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0-windows\csharpMcp.dll" adapterTypeName="executor://nunit3testexecutor/" className="csharpMcp.Tests.Features.DealCaptureCognitoLoginFeature" name="SignInToDealCaptureWithACognitoTestAccount(&quot;authorize&quot;,&quot;MRP\\autoDealCapA&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;2&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="SignInToDealCaptureWithACognitoTestAccount(&quot;write&quot;,&quot;MRP\\autoDealCapW&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;1&quot;,null)" storage="c:\playwright resume 2026 source\dotnetmcp\csharpmcp\bin\debug\net10.0-windows\csharpmcp.dll" id="30715e59-8fa9-d066-e589-877b5ee0ea48">
+      <Execution id="38644dfe-1028-4e4f-bd09-2a84720ad0a1" />
+      <TestMethod codeBase="C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0-windows\csharpMcp.dll" adapterTypeName="executor://nunit3testexecutor/" className="csharpMcp.Tests.Features.DealCaptureCognitoLoginFeature" name="SignInToDealCaptureWithACognitoTestAccount(&quot;write&quot;,&quot;MRP\\autoDealCapW&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;1&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="SignInToDealCaptureWithACognitoTestAccount(&quot;read&quot;,&quot;MRP\\autoDealCapR&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;0&quot;,null)" storage="c:\playwright resume 2026 source\dotnetmcp\csharpmcp\bin\debug\net10.0-windows\csharpmcp.dll" id="534d4f1c-2c6f-5e77-2f64-c099214fd433">
+      <Execution id="3e01044d-c585-43e3-af07-913228667ff0" />
+      <TestMethod codeBase="C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0-windows\csharpMcp.dll" adapterTypeName="executor://nunit3testexecutor/" className="csharpMcp.Tests.Features.DealCaptureCognitoLoginFeature" name="SignInToDealCaptureWithACognitoTestAccount(&quot;read&quot;,&quot;MRP\\autoDealCapR&quot;,&quot;aEm_M3kG_WjC-_&quot;,&quot;0&quot;,null)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="30715e59-8fa9-d066-e589-877b5ee0ea48" executionId="38644dfe-1028-4e4f-bd09-2a84720ad0a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="534d4f1c-2c6f-5e77-2f64-c099214fd433" executionId="3e01044d-c585-43e3-af07-913228667ff0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2914eb75-6f9f-7c4d-8b31-61d539073f58" executionId="9eb071e2-db63-4026-bc0b-9d5423ece61c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started&#xD;
+Running selected tests in C:\Playwright Resume 2026 Source\DotNetMCP\csharpMcp\bin\Debug\net10.0-windows\csharpMcp.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+==========================================&#xD;
+Starting Deal Capture test&#xD;
+==========================================&#xD;
+Starting Playwright...&#xD;
+Starting Google Chrome on CDP port 54697...&#xD;
+Launching Chrome in Incognito mode...&#xD;
+Chrome process started.&#xD;
+Waiting for Chrome remote debugging...&#xD;
+Connecting Playwright to Chrome...&#xD;
+Playwright connected to Chrome.&#xD;
+Playwright page connected.&#xD;
+Given I have Cognito credentials "MRP\autoDealCapR" and "aEm_M3kG_WjC-_"&#xD;
+Cognito user: MRP\autoDealCapR&#xD;
+Cognito password: ********&#xD;
+-&gt; done: DealCaptureCognitoSteps.GivenIHaveCognitoCredentials("MRP\autoDealCapR", "aEm_M3kG_WjC-_") (0.0s)&#xD;
+When I open the Deal Capture URL "https://dealcapture-test.mrp.net.nz/" in Cognito mode&#xD;
+Opening Deal Capture URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Waiting for Chrome Sign in dialog...&#xD;
+Waiting for Chrome authentication dialog...&#xD;
+Entering username: MRP\autoDealCapR&#xD;
+Entering password.&#xD;
+Submitted Chrome authentication dialog.&#xD;
+Navigation response: net::ERR_INVALID_AUTH_CREDENTIALS at https://dealcapture-test.mrp.net.nz/&#xD;
+Call log:&#xD;
+  - navigating to "https://dealcapture-test.mrp.net.nz/", waiting until "commit"&#xD;
+Current URL: chrome-error://chromewebdata/&#xD;
+-&gt; done: DealCaptureCognitoSteps.WhenIOpenTheDealCaptureUrlInCognitoMode("https://dealcaptu...") (13.8s)&#xD;
+Then I should be signed in to Deal Capture as a "read" user&#xD;
+==========================================&#xD;
+Testing role: read&#xD;
+Current URL: chrome-error://chromewebdata/&#xD;
+Page title: Loading https://dealcapture-test.mrp.net.nz/&#xD;
+==========================================&#xD;
+-&gt; done: DealCaptureCognitoSteps.ThenIShouldBeSignedInToDealCaptureAsAUser("read") (0.5s)&#xD;
+Closing Playwright browser...&#xD;
+Playwright browser closed.&#xD;
+&#xD;
+==========================================&#xD;
+Starting Deal Capture test&#xD;
+==========================================&#xD;
+Starting Playwright...&#xD;
+Starting Google Chrome on CDP port 59622...&#xD;
+Launching Chrome in Incognito mode...&#xD;
+Chrome process started.&#xD;
+Waiting for Chrome remote debugging...&#xD;
+Connecting Playwright to Chrome...&#xD;
+Playwright connected to Chrome.&#xD;
+Playwright page connected.&#xD;
+Given I have Cognito credentials "MRP\autoDealCapW" and "aEm_M3kG_WjC-_"&#xD;
+Cognito user: MRP\autoDealCapW&#xD;
+Cognito password: ********&#xD;
+-&gt; done: DealCaptureCognitoSteps.GivenIHaveCognitoCredentials("MRP\autoDealCapW", "aEm_M3kG_WjC-_") (0.0s)&#xD;
+When I open the Deal Capture URL "https://dealcapture-test.mrp.net.nz/" in Cognito mode&#xD;
+Opening Deal Capture URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Waiting for Chrome Sign in dialog...&#xD;
+Waiting for Chrome authentication dialog...&#xD;
+Entering username: MRP\autoDealCapW&#xD;
+Entering password.&#xD;
+Submitted Chrome authentication dialog.&#xD;
+Navigation response: net::ERR_INVALID_AUTH_CREDENTIALS at https://dealcapture-test.mrp.net.nz/&#xD;
+Call log:&#xD;
+  - navigating to "https://dealcapture-test.mrp.net.nz/", waiting until "commit"&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+-&gt; done: DealCaptureCognitoSteps.WhenIOpenTheDealCaptureUrlInCognitoMode("https://dealcaptu...") (14.7s)&#xD;
+Then I should be signed in to Deal Capture as a "write" user&#xD;
+==========================================&#xD;
+Testing role: write&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Page title: Home Page&#xD;
+==========================================&#xD;
+-&gt; done: DealCaptureCognitoSteps.ThenIShouldBeSignedInToDealCaptureAsAUser("write") (0.1s)&#xD;
+Closing Playwright browser...&#xD;
+Playwright browser closed.&#xD;
+&#xD;
+==========================================&#xD;
+Starting Deal Capture test&#xD;
+==========================================&#xD;
+Starting Playwright...&#xD;
+Starting Google Chrome on CDP port 64190...&#xD;
+Launching Chrome in Incognito mode...&#xD;
+Chrome process started.&#xD;
+Waiting for Chrome remote debugging...&#xD;
+Connecting Playwright to Chrome...&#xD;
+Playwright connected to Chrome.&#xD;
+Playwright page connected.&#xD;
+Given I have Cognito credentials "MRP\autoDealCapA" and "aEm_M3kG_WjC-_"&#xD;
+Cognito user: MRP\autoDealCapA&#xD;
+Cognito password: ********&#xD;
+-&gt; done: DealCaptureCognitoSteps.GivenIHaveCognitoCredentials("MRP\autoDealCapA", "aEm_M3kG_WjC-_") (0.0s)&#xD;
+When I open the Deal Capture URL "https://dealcapture-test.mrp.net.nz/" in Cognito mode&#xD;
+Opening Deal Capture URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Waiting for Chrome Sign in dialog...&#xD;
+Waiting for Chrome authentication dialog...&#xD;
+Entering username: MRP\autoDealCapA&#xD;
+Entering password.&#xD;
+Submitted Chrome authentication dialog.&#xD;
+Navigation response: net::ERR_INVALID_AUTH_CREDENTIALS at https://dealcapture-test.mrp.net.nz/&#xD;
+Call log:&#xD;
+  - navigating to "https://dealcapture-test.mrp.net.nz/", waiting until "commit"&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+-&gt; done: DealCaptureCognitoSteps.WhenIOpenTheDealCaptureUrlInCognitoMode("https://dealcaptu...") (15.8s)&#xD;
+Then I should be signed in to Deal Capture as a "authorize" user&#xD;
+==========================================&#xD;
+Testing role: authorize&#xD;
+Current URL: https://dealcapture-test.mrp.net.nz/&#xD;
+Page title: Home Page&#xD;
+==========================================&#xD;
+-&gt; done: DealCaptureCognitoSteps.ThenIShouldBeSignedInToDealCaptureAsAUser("authorize") (0.1s)&#xD;
+Closing Playwright browser...&#xD;
+Playwright browser closed.&#xD;
+&#xD;
+NUnit Adapter 5.0.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
